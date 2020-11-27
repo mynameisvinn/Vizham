@@ -1,4 +1,4 @@
-[![Travis CI Shield](https://travis-ci.com/github/mynameisvinn/Vizham)](https://travis-ci.com/github/mynameisvinn/Vizham)
+[![Travis CI Shield](https://travis-ci.com/mynameisvinn/Vizham.svg?branch=master)](https://travis-ci.com/github/mynameisvinn/Vizham)
 
 # Vizham
 Video indexing/hashing for video lookups.
