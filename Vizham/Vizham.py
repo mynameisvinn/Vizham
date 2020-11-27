@@ -1,5 +1,5 @@
 import acoustid
-from pyacoustid import chromaprint
+from chromaprint import decode_fingerprint
 from typing import List
 
 
@@ -7,7 +7,7 @@ def generate_fingerprint(fname: str) -> List[int]:
     """return an audio fingerprint for a wav file.
     """
     duration, fp_encoded = acoustid.fingerprint_file(fname)
-    fingerprint, version = chromaprint.decode_fingerprint(fp_encoded)
+    fingerprint, version = decode_fingerprint(fp_encoded)
     return fingerprint
 
 

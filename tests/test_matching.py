@@ -6,7 +6,7 @@ from Vizham import generate_fingerprint, contains_snippet
 class TestMatching(TestCase):
 
     def test_subsegment_matching(self):
-        long_str = [1,1,1,3,4]
+        long_str = [1,1,1,3,4,5]
         good_short_str = [1,3,4]
         bad_short_str = [1,2,1]
 
