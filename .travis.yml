@@ -1,8 +1,9 @@
 language: python
+os: osx
 python:
   - 3.8
 install:
-  - apt-get install libchromaprint-dev
+  - sudo brew install libchromaprint-dev
   - pip install -r requirements.txt
 script:
   - pytest
