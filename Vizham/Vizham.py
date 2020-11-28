@@ -1,13 +1,20 @@
+import os
 import acoustid
 from chromaprint import decode_fingerprint
 from typing import List
+from moviepy.editor import AudioFileClip
 
 
 def generate_fingerprint(fname: str) -> List[int]:
-    """return an audio fingerprint for a wav file.
+    """return an audio fingerprint for a video file.
     """
-    duration, fp_encoded = acoustid.fingerprint_file(fname)
+    audioclip = AudioFileClip(fname)
+    audioclip.write_audiofile("temp.wav")
+
+    duration, fp_encoded = acoustid.fingerprint_file("temp.wav")
     fingerprint, version = decode_fingerprint(fp_encoded)
+
+    os. remove()
     return fingerprint
 
 
