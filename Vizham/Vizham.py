@@ -14,7 +14,7 @@ def generate_fingerprint(fname: str) -> List[int]:
     duration, fp_encoded = acoustid.fingerprint_file("temp.wav")
     fingerprint, version = decode_fingerprint(fp_encoded)
 
-    os. remove()
+    os.remove("temp.wav")
     return fingerprint
 
 
