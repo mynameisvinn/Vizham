@@ -1,4 +1,6 @@
 [![Travis CI Shield](https://travis-ci.com/mynameisvinn/Vizham.svg?branch=master)](https://travis-ci.com/github/mynameisvinn/Vizham)
+[![codecov](https://codecov.io/gh/mynameisvinn/Vizham/branch/master/graph/badge.svg?token=O74L63GGSW)](https://codecov.io/gh/mynameisvinn/Vizham)
+
 
 # Vizham
 Video indexing/hashing for video lookups.
